@@ -1,5 +1,8 @@
 # Automated Home Demo
 
+## Demo
+https://zhoujames.github.io/automate-home-demo/src/main/webapp/
+
 ## Description
 This is a POC for Adobe AEM assessment. It is to simulate house automation of lights, curtains and heatings.
 The core JS is built from scratch while the GUI is borrowed from an online example https://github.com/marybeshaw/Just-Another-Automated-Home.
