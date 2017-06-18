@@ -1,0 +1,181 @@
+{
+  "components": {
+    "lights": {
+      "light-001":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-001",
+          "name":"Light",
+          "status":"on",
+          "from":18,
+          "to":21
+        }
+      },
+      "light-002":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-002",
+          "name":"Light",
+          "status":"off",
+          "from":15,
+          "to":18
+        }
+      },
+      "light-003":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-003",
+          "name":"Light",
+          "status":"off",
+          "from":10,
+          "to":13
+        }
+      },
+      "light-004":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-004",
+          "name":"Light",
+          "status":"off",
+          "from":12,
+          "to":15
+        }
+      },
+      "light-005":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-005",
+          "name":"Light",
+          "status":"off",
+          "from":9,
+          "to":23
+        }
+      },
+      "light-006":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-006",
+          "name":"Light",
+          "status":"off",
+          "from":1,
+          "to":7
+        }
+      },
+      "light-007":{
+        "type":"smart-led",
+        "data":{
+          "domId":"light-007",
+          "name":"Light",
+          "status":"off",
+          "from":5,
+          "to":17
+        }
+      }
+    },
+    "heatings": {
+      "heating-001": {
+        "type": "smart-heating",
+        "data": {
+          "domId": "heating-001",
+          "name":"Smart Heating",
+          "current": "24",
+          "min":"18",
+          "max":"26"
+        }
+      }
+    },
+    "curtains":{
+      "curtain-001": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-001",
+          "name":"Curtain",
+          "status": "open"
+        }
+      },
+      "curtain-002": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-002",
+          "name":"Curtain",
+          "status": "open"
+        }
+      },
+      "curtain-003": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-003",
+          "name":"Curtain",
+          "status": "closed"
+        }
+      },
+      "curtain-004": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-004",
+          "name":"Curtain",
+          "status": "closed"
+        }
+      },
+      "curtain-005": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-005",
+          "name":"Curtain",
+          "status": "closed"
+        }
+      },
+      "curtain-006": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-006",
+          "name":"Curtain",
+          "status": "closed"
+        }
+      },
+      "curtain-007": {
+        "type": "smart-curtain",
+        "data": {
+          "domId": "curtain-007",
+          "name":"Curtain",
+          "status": "closed"
+        }
+      }
+
+    }
+  },
+  "floor-plan": {
+    "global":{
+      "svgId":"",
+      "components":["heating-001"]
+    },
+    "living-room":{
+      "svgId":"g-living-room",
+      "components":["light-001","curtain-001"]
+    },
+    "kitchen":{
+      "svgId":"g-kitchen",
+      "components":["light-002","curtain-002"]
+    },
+    "sun-deck":{
+      "svgId":"g-sun-deck",
+      "components":["light-003","curtain-003"]
+    },
+    "master-bedroom":{
+      "svgId":"g-master-bedroom",
+      "components":["light-004","curtain-004"]
+    },
+    "second-bedroom":{
+      "svgId":"g-second-bedroom",
+      "components":["light-005","curtain-005"]
+    },
+    "third-bedroom":{
+      "svgId":"g-third-bedroom",
+      "components":["light-006","curtain-006"]
+    },
+    "entrance-hall":{
+      "svgId":"g-entrance-hall",
+      "components":["light-007","curtain-007"]
+    }
+  }
+}

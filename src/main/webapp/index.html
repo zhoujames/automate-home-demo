@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/component/light.js"></script>
+    <script src="js/component/curtain.js"></script>
+    <script src="js/component/heating.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Droid+Serif" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="content">
+
+    <h1>Automated Home Demo</h1>
+
+    <div id="control-panel">
+        <h2>Current Time <span id="hour">8</span>:00</h2>
+        <h2>Control Panel</h2>
+        <div id="control-panel-content">
+            <div id="home">
+                <div id="global"></div>
+                <div id="entrance-hall" class="room"><h3>Entrance Hall</h3></div>
+                <div id="living-room" class="room"><h3>Living Room</h3></div>
+                <div id="kitchen" class="room"><h3>Kitchen</h3></div>
+                <div id="sun-deck" class="room"><h3>Sun Deck</h3></div>
+                <div id="master-bedroom" class="room"><h3>Master Bedroom</h3></div>
+                <div id="second-bedroom" class="room"><h3>Second Bedroom</h3></div>
+                <div id="third-bedroom" class="room"><h3>Third Bedroom</h3></div>
+                <div class="room"><h3>Smart Home Emulation</h3><button id="emulate" onclick="AutomatedHome.emulate()">Start Emulating</button></div>
+            </div>
+        </div>
+    </div>
+    <object type="image/svg+xml" data="data/floor-plan.svg" class="home-map" id="home-map">Your browser does not support SVG</object>
+    <script>
+        $(window).bind("load", function() {
+            AutomatedHome.onReady("data/home.json");
+        });
+    </script>
+    <br/>
+    <div class="room">
+        ​<textarea id="log" rows="10" cols="120"></textarea>
+    </div>
+</div>
+</body>
+</html>
