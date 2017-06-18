@@ -43,7 +43,7 @@ Customized event example can be found in Light component.  There is an out-of-bo
 ### Server communication
 AH is currently mocking all dynamic requests to the server. The status of the whole house is representing in a JSON file. It could be replaced by a REST API which retrieves the data from a database or other storage.
  
-###Interaction Log
+### Interaction Log
 The History component on the GUI is to record all the changes made by either the customer or triggered by internal events. It could be used to troubleshoot the event publish/subscribe in runtime. 
 
 
